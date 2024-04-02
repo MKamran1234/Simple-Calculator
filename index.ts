@@ -3,8 +3,8 @@ import { log } from "console";
 import inquirer from "inquirer";
 
 const answer = await inquirer.prompt([
-  {name: "Num1" ,type: "number", message: "Enter first number:" },
-  { name: "Num2" ,type: "number", message: "Enter first number:" },
+  {name: "Num1" ,type: "number", message: "Enter your first number:" },
+  { name: "Num2" ,type: "number", message: "Enter your second number:" },
   {
     message: "select one of the operator to perform operation:",
     type: "list",
@@ -30,5 +30,5 @@ else if (opt === "*"){
 else if (opt === "/"){
     console.log(`${number1} ${opt} ${number2} = ${number1 / number2}`)
 }
-
+console.log("THE END");
 
